@@ -1,0 +1,67 @@
+{
+    "manifestVersion": 1,
+    "id": "semantic-version-extractor",
+    "name": "Semantic Version Extractor",
+    "version": "1.0.0",
+    "publisher": "SimonCicek",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "description": "Extracts a version number (in the SemVer format) from a file.",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "icons": {
+        "default": "images/extension-icon.png"        
+    },
+    "tags": [
+        "semantic version",
+        "versioning",
+        "version",
+        "semver",
+        "build",
+        "release"
+    ],
+    "links": {
+        "support": { "uri": "https://github.com/scicek/SemanticVersioningExtractor-DevOpsTask/issues" }
+    },
+    "galleryFlags": [
+        "Preview"
+    ],
+    "branding": {
+        "color": "rgb(175, 0, 0)",
+        "theme": "dark"
+    },
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/scicek/SemanticVersioningExtractor-DevOpsTask"
+    },
+    "content": {
+        "details": {
+            "path": "README.md"
+        },
+        "license": {
+            "path": "LICENSE.md"
+        }
+    },
+    "files": [
+        {
+            "path": "task"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "semantic-version-extractor-task",
+            "type": "ms.vss-distributed-task.task",
+            "description": "Extracts a version number (in the SemVer format) from a file.",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "task"
+            }
+        }
+    ]
+}
